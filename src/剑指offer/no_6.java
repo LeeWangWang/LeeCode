@@ -2,7 +2,7 @@ package 剑指offer;
 
 /**
  * @ClassName: no_6
- * @Description: TODO
+ * @Description: 从尾到头打印链表
  * @Author: lww
  * @Date: 2023/5/11 15:09
  * @Version: V1
@@ -15,6 +15,9 @@ class ListNode {
 }
 
 public class no_6 {
+    /*
+    输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
+     */
     public static int[] reversePrint(ListNode head) {
 
         int length = 0, i = 0;

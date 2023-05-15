@@ -2,12 +2,17 @@ package 剑指offer;
 
 /**
  * @ClassName: no_4
- * @Description: TODO
+ * @Description: 二维数组中的查找
  * @Author: lww
  * @Date: 2023/5/4 10:31
  * @Version: V1
  **/
 public class no_4 {
+    /*
+    在一个 n * m 的二维数组中，每一行都按照从左到右非递减的顺序排序，
+    每一列都按照从上到下非递减的顺序排序。
+    请完成一个高效的函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
+     */
     public static boolean findNumberIn2DArray(int[][] matrix, int target) {
         int i = matrix.length - 1;
         int j = 0;
