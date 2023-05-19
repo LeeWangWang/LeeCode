@@ -8,4 +8,11 @@ package 剑指offer;
  * @Version: V1
  **/
 public class no_27 {
+    public TreeNode mirrorTree(TreeNode root) {
+        if (root == null) return null;
+        TreeNode tem = root.left;
+        root.left = mirrorTree(root.right);
+        root.right = mirrorTree(tem);
+        return root;
+    }
 }
