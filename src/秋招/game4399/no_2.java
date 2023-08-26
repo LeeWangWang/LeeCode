@@ -22,3 +22,5 @@ public class no_2 {
         System.out.println(dp[n]);
     }
 }
+
+
