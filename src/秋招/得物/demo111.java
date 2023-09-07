@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * @ClassName: demo111
- * @Description:
+ * @Description: 原根
  * @Author: lww
  * @Date: 8/23/23 7:31 PM
  * @Version: V1

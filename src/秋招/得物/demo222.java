@@ -4,13 +4,12 @@ import java.util.*;
 
 /**
  * @ClassName: demo222
- * @Description:œ
+ * @Description: 运动会开幕式
  * @Author: lww
  * @Date: 8/23/23 7:33 PM
  * @Version: V1
  **/
 public class demo222 {
-    // 运动会开幕式
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
