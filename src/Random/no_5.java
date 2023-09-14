@@ -40,10 +40,49 @@ public class no_5 {
     }
 
 
-    // 2.
+    // 2. 动态规划
     public static String longestPalindrome(String s) {
-        return "";
+        int len = s.length();
+        // 单个字符一定是回文
+        if (len < 2) {
+            return s;
+        }
+        // 最大长度
+        int maxLen = 1;
+        int begin = 0;
+        // 存储是否是回文串
+        boolean[][] dp = new boolean[len][len];
+        char[] chars = s.toCharArray();
+
+        for (int i = 0; i < len; i++) {
+            dp[i][i] = true;
+        }
+        // 从第2个字符开始
+        for (int j = 1; j < len; j++) {
+            // 从第1个字符开始，到第j个字符
+            for (int i = 0; i < j; i++) {
+                // 如果两个字符不相等，那么此位置为false
+                if (chars[i] != chars[j]) {
+                    dp[i][j] = false;
+                } else {
+                    // 长度为2或3是，肯定是回文。即除去chars[i]和 chars[j]后，只要1个或0个字符。防止出现例如 i=2 j=3情况下 查看dp[3][2]。
+                    if (j - i < 2) {
+                        dp[i][j] = true;
+                    } else {
+                        // 排除头尾元素后，是否是回文串
+                        dp[i][j] = dp[i + 1][j - 1];
+                    }
+                }
+                if (dp[i][j] && j - i + 1 > maxLen) {
+                    maxLen = j - i + 1;
+                    begin = i;
+                }
+            }
+        }
+        return s.substring(begin, maxLen + begin);
     }
+
+
 
     public static void main(String[] args) {
         String s = "babad";

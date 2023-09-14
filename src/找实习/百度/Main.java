@@ -44,25 +44,25 @@ public class Main {
 
 
 /*
-class TreeNode {
+class Tools.TreeNode {
     char color;
-    List<TreeNode> friends;
+    List<Tools.TreeNode> friends;
 
-    public TreeNode(char color) {
+    public Tools.TreeNode(char color) {
         this.color = color;
         friends = new ArrayList<>();
     }
 
-    void setFriend(TreeNode node) {
+    void setFriend(Tools.TreeNode node) {
         friends.add(node);
     }
 }
 
 public class Main {
 
-    static int getDfs(TreeNode node, TreeNode pre) {
+    static int getDfs(Tools.TreeNode node, Tools.TreeNode pre) {
         int sum = 1;
-        for(TreeNode friend : node.friends) {
+        for(Tools.TreeNode friend : node.friends) {
             if (friend != pre) {
                 int result = getDfs(friend, node);
                 if (friend.color != node.color) {
@@ -78,10 +78,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        TreeNode[] treeNodes = new TreeNode[n];
+        Tools.TreeNode[] treeNodes = new Tools.TreeNode[n];
         char[] colors = scanner.next().toCharArray();
         for (int i = 0; i < n; i++) {
-            treeNodes[i] = new TreeNode(colors[i]);
+            treeNodes[i] = new Tools.TreeNode(colors[i]);
         }
         int[][] res = new int[n-1][2];
         for (int i = 1; i < n; i++) {

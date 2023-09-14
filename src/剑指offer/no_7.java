@@ -1,5 +1,6 @@
 package 剑指offer;
 
+import Tools.TreeNode;
 import java.util.*;
 
 /**
@@ -9,12 +10,7 @@ import java.util.*;
  * @Date: 2023/5/11 15:42
  * @Version: V1
  **/
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
+
 public class no_7 {
     /*
     输入某二叉树的前序遍历和中序遍历的结果，请构建该二叉树并返回其根节点。
