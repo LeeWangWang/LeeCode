@@ -1,4 +1,4 @@
-package Hot100;
+package 动态规划;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @Date: 10/11/23 8:38 PM
  * @Version: V1
  **/
-public class LCR零钱兑换 {
+public class 零钱兑换 {
     public static int coinChange(int[] coins, int amount) {
         int max = amount + 1;
         int[] dp = new int[amount + 1];

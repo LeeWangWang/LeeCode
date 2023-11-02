@@ -1,4 +1,4 @@
-package Hot100;
+package 动态规划;
 
 /**
  * @ClassName: 最长公共子序列
@@ -7,7 +7,7 @@ package Hot100;
  * @Date: 10/11/23 7:55 PM
  * @Version: V1
  **/
-public class LCS最长公共子序列 {
+public class 最长公共子序列 {
     public static void main(String[] args) {
         String s1 = "abcde";
         String s2 = "ace";

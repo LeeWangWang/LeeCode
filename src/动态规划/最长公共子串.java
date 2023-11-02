@@ -1,4 +1,4 @@
-package Hot100;
+package 动态规划;
 
 /**
  * @ClassName: LCS最长公共子串
@@ -7,7 +7,7 @@ package Hot100;
  * @Date: 10/12/23 8:57 AM
  * @Version: V1
  **/
-public class LCS最长公共子串 {
+public class 最长公共子串 {
     public static void main(String[] args) {
         String s1 = "ABCBDAB";
         String s2 = "BDCABA";
